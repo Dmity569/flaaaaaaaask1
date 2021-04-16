@@ -28,6 +28,9 @@ logging.basicConfig(level=logging.INFO)
 # Когда он откажется купить слона,
 # то мы уберем одну подсказку. Как будто что-то меняется :)
 sessionStorage = {}
+@app.route('/')
+def main1():
+    return "hello, all ok"
 
 
 @app.route('/post', methods=['POST'])
